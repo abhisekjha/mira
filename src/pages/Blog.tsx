@@ -26,7 +26,8 @@ const blogPosts: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop',
     author: {
       name: 'MiRA Team',
-      avatar: './img/absec.jpg'
+      avatar: 'https://raw.githubusercontent.com/abhisekjha/mira/main/img/absec.jpg'
+
     }
   },
   {
@@ -38,7 +39,7 @@ const blogPosts: BlogPost[] = [
     image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop',
     author: {
       name: 'Abhisek Kumar Jha',
-      avatar: './img/absec.jpg'
+      avatar: 'https://raw.githubusercontent.com/abhisekjha/mira/main/img/absec.jpg'
     }
   }
 ];

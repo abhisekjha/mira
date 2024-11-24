@@ -7,7 +7,7 @@ export function About() {
     {
       name: "Abhisek Kumar Jha",
       role: "CEO & Founder",
-      image:"img/absec.jpg",
+      image:"https://raw.githubusercontent.com/abhisekjha/mira/main/img/absec.jpg",
       bio: "Former Cybersecurity and AI researcher at UTA, passionate about using technology to enhance human potential."
     }
   ];
