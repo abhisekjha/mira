@@ -5,22 +5,10 @@ import { motion } from 'framer-motion';
 export function About() {
   const team = [
     {
-      name: "Sarah Chen",
+      name: "Abhisek Kumar Jha",
       role: "CEO & Founder",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
       bio: "Former AI researcher at Stanford, passionate about using technology to enhance human potential."
-    },
-    {
-      name: "David Park",
-      role: "CTO",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-      bio: "15 years of experience in AI and machine learning, previously led engineering at major tech companies."
-    },
-    {
-      name: "Maria Rodriguez",
-      role: "Head of Product",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-      bio: "Product veteran with a focus on user-centered design and ethical AI development."
     }
   ];
 

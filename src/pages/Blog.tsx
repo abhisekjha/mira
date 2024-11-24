@@ -37,7 +37,7 @@ const blogPosts: BlogPost[] = [
     readTime: '4 min read',
     image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop',
     author: {
-      name: 'Sarah Chen',
+      name: 'Abhisek Kumar Jha',
       avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=32&h=32&fit=crop'
     }
   }
