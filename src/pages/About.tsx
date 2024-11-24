@@ -7,8 +7,8 @@ export function About() {
     {
       name: "Abhisek Kumar Jha",
       role: "CEO & Founder",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-      bio: "Former AI researcher at Stanford, passionate about using technology to enhance human potential."
+      image:"img/absec.jpg",
+      bio: "Former Cybersecurity and AI researcher at UTA, passionate about using technology to enhance human potential."
     }
   ];
 
