@@ -1,0 +1,67 @@
+import React from 'react';
+import { PageHeader } from '../components/shared/PageHeader';
+import { motion } from 'framer-motion';
+
+export function About() {
+  const team = [
+    {
+      name: "Sarah Chen",
+      role: "CEO & Founder",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+      bio: "Former AI researcher at Stanford, passionate about using technology to enhance human potential."
+    },
+    {
+      name: "David Park",
+      role: "CTO",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      bio: "15 years of experience in AI and machine learning, previously led engineering at major tech companies."
+    },
+    {
+      name: "Maria Rodriguez",
+      role: "Head of Product",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      bio: "Product veteran with a focus on user-centered design and ethical AI development."
+    }
+  ];
+
+  return (
+    <div className="container mx-auto px-6 py-16">
+      <PageHeader
+        title="Our Mission"
+        description="We're on a mission to empower individuals to achieve their full potential through intelligent, adaptive technology."
+      />
+
+      <div className="max-w-3xl mx-auto mb-16">
+        <motion.p 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-lg text-zinc-400 mb-6"
+        >
+          At MiRA, we believe that everyone deserves a personal AI assistant that understands their unique needs and helps them navigate life's complexities. Our team of experts in AI, psychology, and human-computer interaction works tirelessly to create technology that adapts to you, not the other way around.
+        </motion.p>
+      </div>
+
+      <h2 className="text-3xl font-bold text-zinc-200 mb-8 text-center">Meet Our Team</h2>
+      <div className="grid md:grid-cols-3 gap-8 mb-16">
+        {team.map((member, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+            className="text-center"
+          >
+            <img
+              src={member.image}
+              alt={member.name}
+              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
+            />
+            <h3 className="text-xl font-semibold text-zinc-200 mb-1">{member.name}</h3>
+            <p className="text-violet-400 mb-2">{member.role}</p>
+            <p className="text-zinc-500">{member.bio}</p>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+}
